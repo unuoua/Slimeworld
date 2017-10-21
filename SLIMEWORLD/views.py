@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse("Hello")
+    return render(request, "genre.html", {})
 
 
 class HomeView(TemplateView):
